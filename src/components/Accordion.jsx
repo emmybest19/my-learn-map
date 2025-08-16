@@ -57,7 +57,7 @@ export default function  mainAccordion() {
 
   return (
     <div className="px-6 md:px-10 py-16 bg-gray-50">
-      <h1 className="text-2xl md:text-3xl font-bold text-center mb-10">Frequently Asked Questions</h1>
+      <h1 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[#3B82F6]">Frequently Asked Questions</h1>
       {items.map((item, index) => (
         <Accordion
           key={index}

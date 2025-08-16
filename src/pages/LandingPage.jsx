@@ -8,6 +8,7 @@ import Hero from "../components/Hero.jsx";
 import Header from "../components/Header.jsx";
 import Testimonial from "../components/Testimonial.jsx";
 import Category from "../components/Category.jsx";
+import Accordion from "../components/Accordion.jsx";
 
 export default function LandingPage() {
   return (
@@ -20,6 +21,7 @@ export default function LandingPage() {
       <Category />
 
       <Testimonial />
+      <Accordion />
 
       
       <section className="px-6 md:px-10 py-20 text-center bg-[#1E3A8A] text-white">
