@@ -42,16 +42,16 @@ export default function  mainAccordion() {
 
   const items = [
     {
-      title: "What is React?",
-      content: "React is a JavaScript library for building user interfaces.",
+      title: "What is my-learn-app",
+      content: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nisi facilis praesentium iusto fugiat quis inventore sed magni, ab voluptates debitis recusandae accusamus mollitia, ullam repellat asperiores! Earum, nesciunt nobis!",
     },
     {
-      title: "What is Tailwind CSS?",
-      content: "Tailwind CSS is a utility-first CSS framework for building modern websites.",
+      title: "What courses do you have?",
+      content: "T Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nisi facilis praesentium iusto fugiat quis inventore sed magni, ab voluptates debitis recusandae accusamus mollitia, ullam repellat asperiores! Earum, nesciunt nobis!",
     },
     {
-      title: "How does this accordion work?",
-      content: "It uses React state to toggle visibility and Tailwind for smooth transitions.",
+      title: "How does this entails?",
+      content: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nisi facilis praesentium iusto fugiat quis inventore sed magni, ab voluptates debitis recusandae accusamus mollitia, ullam repellat asperiores! Earum, nesciunt nobis!",
     },
   ];
 
