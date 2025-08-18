@@ -21,7 +21,7 @@ function Hero() {
     return () => clearInterval(interval);
   }, [images.length]);
   return (
-    <div className="flex flex-col md:flex-row items-center gap-5 w-full justify-between px-6 md:px-10 py-20 bg-[#1E3A8A] text-white">
+    <div className="flex flex-col md:flex-row items-center gap-5 w-full justify-between px-6 md:px-10 py-20 bg-[#1E3A8A] text-white overflow-x-hidden">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -35,25 +35,24 @@ function Hero() {
           Join thousands of learners worldwide and gain new skills with our
           expert-led courses.
         </p>
-        <Button >
-          <span className="bg-[#F59E0B] text-white font-semibold px-6 py-3 rounded-full shadow-md cursor-pointer hover:bg-[#a87010]">Explore Courses</span>
+        <Button>
+          <span className="bg-[#F59E0B] text-white font-semibold px-6 py-3 rounded-full shadow-md cursor-pointer hover:bg-[#a87010]">
+            Explore Courses
+          </span>
         </Button>
       </motion.div>
 
       {/* Image Carousel */}
       <motion.div
         key={currentImage}
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
         className="mt-10 md:mt-0 w-full md:w-1/2 flex justify-center aspect-[4/3]"
       >
         <motion.img
           src={images[currentImage]}
           alt="Learning"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.8 }}
           className="rounded-2xl shadow-lg w-full  object-cover"
         />
